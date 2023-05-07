@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="p-0 h-screen bg-slate-950">
+    <header class="bg-slate-900 p-4 flex items-center justify-between">
+        <div class="flex w-9/12">
+            <input type="color" value="#F55A5A" name="color" id="color" class="p-0 appearance-none border-none w-14 h-14 mr-2 bg-transparent">
+            <select id="mode" name="mode" class="focus:outline-none rounded w-full">
+                <option value="monochrome" class="">Monochrome</option>
+                <option value="monochrome-dark">Monochrome Dark</option>
+                <option value="monochrome-light">Monochrome Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+        </div>
+        <button id="get-color-btn" class="p-4 bg-slate-500 rounded text-white">Get Colors</button>
+    </header>
+    <main class="w-full h-5/6">
+        <div class="flex justify-stretch w-full h-full" id="color-pallete">
+            <div class="bg-pink-500 w-96 h-full flex flex-col-reverse">
+                <div class="bg-slate-950 text-white text-center p-4">
+                    None
+                </div>
+            </div>
+            <div class="bg-red-500 w-96 h-full flex flex-col-reverse">
+                <div class="bg-slate-950 text-white text-center p-4">
+                    None
+                </div>
+            </div>
+            <div class="bg-sky-500 w-96 h-full flex flex-col-reverse">
+                <div class="bg-slate-950 text-white text-center p-4">
+                    None    
+                </div>
+            </div>
+            <div class="bg-teal-500 w-96 h-full flex flex-col-reverse">
+                <div class="bg-slate-950 text-white text-center p-4">
+                    Pink
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

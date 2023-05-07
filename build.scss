@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-color-swatch {
+    border: none;
+    border-radius: 5px;
+}
+
+select:focus>option:checked {
+    background: #fff !important;
+}
+
+option:checked::after {
+
+}
